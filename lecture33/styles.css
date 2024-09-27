@@ -46,7 +46,7 @@ body{
     display: none;
     gap:1.5rem;
 }
-@media screen and  (min-width:768px){
+@media screen and  (min-width:1350px){
     .nav{
         display: flex;
         gap:1.5rem;
@@ -73,7 +73,7 @@ body{
     font-size: 1rem;
     font-weight: 600;
 }
-@media screen and  (min-width:768px){
+@media screen and  (min-width:1350px){
     .contact-button{
     display: block;
 }
@@ -90,7 +90,7 @@ font-size: 1rem;
 font-weight: 600;
 padding: 0.5rem 0.9rem;
 }
-@media screen and (max-width:768px){
+@media screen and (max-width:1350px){
     .menu-button{
         display: block;
         }
