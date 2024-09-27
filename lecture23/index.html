@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>  Animations Ka Gyaan</title>
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing: border-box;
+        }
+    .container{
+        width:100vw;
+        height:299vh;
+        border:1px solid black;
+        background-color: aquamarine;
+    }
+    .box{
+        width:380px;
+        height:80px;
+        background-color: blue;
+        border-radius: 10px;
+        border: 3px solid black;
+        margin:10px;
+       position: relative;
+      /*  animation-name: RightMovement; */
+     /*   animation-duration: 5s; */
+       /* animation-iteration-count: 1; */
+       /* animation-delay: 2s; */
+      /*  animation-timing-function:linear;  */
+       /* animation-direction: alternate-reverse; */
+        /*  animation-fill-mode: forwards; */
+
+       /* @keyframes duration | easing-function | delay |
+iteration-count | direction | fill-mode | play-state | name */
+animation: 5s linear 1s infinite alternate none  running RightMovement;
+    }
+    @keyframes RightMovement {
+        from{
+
+            top:0;
+            left:0;
+        }
+        to{
+            top:0;
+            left:1350px;
+
+        }
+        
+    }
+    #box2{
+        width:380px;
+        height:80px;
+        background-color: blue;
+        border-radius: 10px;
+        border: 3px solid black;
+        margin:10px;
+       position: relative;
+       animation: 5s ease-in infinite alternate none  running leftMovement;
+    }
+    @keyframes leftMovement {
+        from{
+
+            top:650px;
+            left:1350px;
+        }
+        to{
+            top:650px;
+            left:0;
+
+        }
+        
+    }
+    #circle{
+        width:100px;
+        height:100px;
+        background-color: blue;
+        border-radius: 50px;
+        border: 3px solid black;
+        margin:10px;
+       position: relative;
+       top:10%;
+       left:30%;
+       animation: 10s ease-in-out infinite alternate-reverse none  running circleMovement;
+    }
+@keyframes circleMovement  {
+    0%{   top:1%;
+        left:5%;
+
+    }
+    25%{ 
+        top:5%;
+        left:15%;
+
+
+    }
+    60%{
+        top:10%;
+        left:50%;
+
+    }
+    90%{ 
+        top:60%;
+        left:85%;
+
+    }
+    
+    }
+           </style>
+
+    
+</head>
+<body>
+    <div class="container">
+      <div class="box"></div>
+      <div id="box2"></div>
+      <div id="circle"></div>
+    </div>
+</body>
+</html>

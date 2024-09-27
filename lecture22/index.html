@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        :root{
+            --primary-color:rgb(52, 165, 42);
+            --custom-width:330px
+        }
+        .container{
+            background-color: azure;
+            border: 1px solid black;
+            width: 800px;
+            height:800px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+        .box{
+         
+            background-color: aquamarine;
+            width: var( --custom-width);
+            height:500px;
+            border: 1px solid  red;
+            margin:5px;
+            padding:5px;
+            box-shadow:   -30px 15px 50px  40px  var( --primary-color);
+
+        }
+        img{
+            width: 300px;
+            height: 200px;;
+        }
+        #head1{
+            text-shadow: rgb(6, 82, 56) 6px 3px 1px ;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            <img src="iphone15.file.jfif" alt="iphone ">
+            <h1 id="head1">Iphone 15</h1>
+            <p>
+                Dynamic Island bubbles up alerts and Live Activities — so you don’t miss them while you’re doing something else. You can track your next ride, see who’s calling, check your flight status, and so much more.</p>
+        </div>
+    </div>
+</body>
+</html>

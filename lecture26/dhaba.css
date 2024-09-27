@@ -1,0 +1,156 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    overflow-x: hidden; /* Use 'hidden' instead of 'none' */
+    background-color: #85FFBD;
+    background-image: linear-gradient(45deg, #85FFBD 0%, #FFFB7D 100%);
+}
+
+.navContainer {
+    width: 100vw;
+    background-color: #FFFFFF;
+    background-image: linear-gradient(180deg, #FFFFFF 0%, #6284FF 50%, #FF0000 100%);
+    min-height: 80px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+}
+
+nav {
+    width: 100%;
+    overflow-x: hidden; /* Use 'hidden' instead of 'none' */
+    padding-right:2rem;
+}
+
+#navList {
+    padding: 15px;
+    list-style: none;
+    font-size: 2.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+#navLogo {
+    font-size: 2.8rem;
+    color: rgb(217, 217, 226);
+}
+
+a {
+    text-decoration: none;
+}
+
+#navItems {
+    display: flex;
+    gap: 40px;
+}
+
+.contentBox {
+    width: 80%; /* Adjusted for better responsiveness */
+    margin: auto;
+
+    background-color: white;
+    display: flex;
+    flex-direction: column; /* Ensure the content stacks vertically */
+    gap: 20px; /* Add space between items */
+    padding: 3rem;
+    box-shadow: 0px 0px 30px #FF0000 ;
+}
+
+.items {
+    display: flex;
+    flex-direction: column; /* Change to column layout to stack items vertically */
+    justify-content: center; /* Optional: center items vertically */
+    align-items: center; /* Optional: center items horizontally */
+    justify-content: space-around;
+    gap:50px;
+}
+
+.leftBox, .rightBox {
+    display: flex;
+   position: relative;
+    justify-content: space-between;
+    width: 100%; /* Ensure both boxes take full width */
+    margin-bottom: 20px; /* Space between the two boxes */
+}
+.leftBox h2{
+    font-style: italic;
+    font-size: 2rem;
+}
+.rightBox h2{
+    font-style: italic;
+    font-size: 2rem;
+}
+
+
+.footerBox {
+    background-color: #FFFFFF;
+    background-image: linear-gradient(180deg, #FFFFFF 0%, #6284FF 50%, #FF0000 100%);
+    text-align: center;
+    min-height: 40px;
+}
+
+.footerBox p {
+    color: azure;
+    width: 100%;
+    font-size: 2rem;
+}
+.pehlaleft{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.dusraRight{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.ingBox{
+    font-size: 1.rem;
+
+}
+.recBox{
+    font-size: 1.rem;
+
+
+}
+.leftBox img{
+    border-radius: 20px;
+}
+.rightBox img{
+    border-radius: 20px;
+}
+.rightBox img:hover{
+  transform: scale(1.1);
+  transition: all 0.6s linear 0s;
+}
+.leftBox img:hover{
+    transform: scale(1.1);
+    transition: all 0.6s  linear 0s;
+  }
+  
+.leftBox .overlay{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    height: 100%;
+    width: 100%;
+
+}
+.rightBox .overlay1{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    height: 100%;
+    width: 100%;
+
+}
