@@ -15,14 +15,14 @@ body{
 .header-Content{
     background-color: aquamarine;
     height: 30px;
-    max-width: 1800px;
+    max-width: 100%;
     margin: 0 auto;
     display: flex;
    
    justify-content: space-between;
    align-items: center;
    
-    padding: 2rem;
+    padding:  2rem 10rem;
 }
 .logo{
     display: flex;
@@ -35,7 +35,8 @@ body{
 }
 .logo-icon{
    height: 5.875rem;
-   width: 1.938rem;
+   width: 5.875rem;
+   border-radius: 50%;
     
 }
 .logo-text{
