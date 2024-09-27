@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>SecondForm</title>
+</head>
+<body>
+    <h1>Job Application</h1>
+    <form >
+
+        <label for="textfield1">Name :</label>
+        <input type="text" name="textfield1" id="textfield1">
+        <br/>
+        <br/>
+        <label for="emailid1">Email :</label>
+        <input type="email" name="emailid1" id="emailid1">
+        <br/>
+        <br/>
+        <label for="teld1">Phone no :</label>
+        <input type="tel" name="telid1" id="telid1">
+        <br/>
+        <br/>
+        <label for="fileselect1">Add Resume :</label>
+        <input type="file" id="fileselect1" name="fileselect1">
+        <br/>
+        <br/>
+        <label for="counter"> Experience (In years)</label>
+        <input type="number" name="counter" id="counter" min="0" max="35">
+        <br/>
+        <br/>
+        <fieldset>
+            <legend>Skills<legend>
+            <label for="checkbox1">C++</label>
+            <input type="checkbox" id="checkbox1" name="checkbox1">
+            
+            <label for="checkbox2">Java</label>
+            <input type="checkbox" id="checkbox2" name="checkbox2">
+          
+            <label for="checkbox3">Python</label>
+            <input type="checkbox" id="checkbox3" name="checkbox3">
+            
+        </fieldset>
+        <br/>
+        <label for="educationtype">Higher Education</label>
+        <select name="EducationType" id="eductaiontype">
+            <option value="a">A</option>
+            <option value="b">B</option>
+            <option value="c">C</option>
+            <option value="d">D</option>
+        </select>
+        <br/>
+        <fieldset>
+            <legend>Availability</legend>
+            <label for="radio1">Full-Time</label>
+            <input type="radio" id="radio1" name="availability" value="Full-Time">
+            <br/>
+            <label for="radio2">Part-Time</label>
+            <input type="radio" id="radio2" name="availability"  value="Part-Time">
+        </fieldset>
+        <label for="textarea1">Additionl information</label>
+        <br/>
+           <textarea name="textarea1" id="textarea1" col="30" row="10"></textarea>
+              
+           <input type="submit" value="Submit apllication">
+    </form>
+</body>
+</html>
