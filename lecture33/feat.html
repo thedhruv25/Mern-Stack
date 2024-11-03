@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Features - TravelKaro</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to your CSS file -->
+    <style>
+        /* Base Styles */
+        body {
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+            color: #444;
+            line-height: 1.6;
+        }
+
+        header {
+            background: linear-gradient(to right, #0077cc, #005fa3);
+            color: #fff;
+            text-align: center;
+            padding: 2.5rem 0;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        h1 {
+            margin: 0;
+            font-size: 3rem;
+        }
+
+        p {
+            font-size: 1.25rem;
+            margin-top: 0.5rem;
+        }
+
+        #features {
+            padding: 2rem 1rem;
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        h2 {
+            text-align: center;
+            color: #0077cc;
+            font-size: 2.5rem;
+            margin-bottom: 2rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            gap: 1.5rem;
+        }
+
+        li {
+            background: #fff;
+            border-radius: 12px;
+            box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1);
+            padding: 2rem;
+            flex-basis: calc(30% - 1rem);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        li::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 119, 204, 0.05);
+            transition: opacity 0.3s ease;
+            opacity: 0;
+            border-radius: 12px;
+            z-index: 0;
+        }
+
+        li:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 4px 25px rgba(0, 0, 0, 0.2);
+        }
+
+        li:hover::before {
+            opacity: 1;
+        }
+
+        li h3 {
+            color: #0077cc;
+            margin-bottom: 0.5rem;
+            font-size: 1.5rem;
+            z-index: 1;
+            position: relative;
+        }
+
+        li p {
+            z-index: 1;
+            position: relative;
+        }
+
+        footer {
+            background: #005fa3;
+            color: #fff;
+            text-align: center;
+            padding: 2rem 0;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+            box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        footer a {
+            color: #ffcc00;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        /* Responsive Styles */
+        @media (max-width: 900px) {
+            li {
+                flex-basis: calc(45% - 1rem);
+            }
+        }
+
+        @media (max-width: 600px) {
+            li {
+                flex-basis: calc(100% - 1rem);
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Explore the Features of TravelKaro</h1>
+        <p>Your ultimate travel companion for unforgettable journeys.</p>
+    </header>
+    
+    <section id="features">
+        <h2>Our Unique Features</h2>
+        <ul>
+            <li>
+                <h3>Personalized Itineraries</h3>
+                <p>Receive customized travel itineraries tailored to your preferences, interests, and budget.</p>
+            </li>
+            <li>
+                <h3>Real-Time Flight and Hotel Booking</h3>
+                <p>Book flights and accommodations seamlessly with our integrated booking system, ensuring you get the best deals.</p>
+            </li>
+            <li>
+                <h3>Local Experiences</h3>
+                <p>Discover unique experiences and activities hosted by locals, giving you a taste of authentic culture.</p>
+            </li>
+            <li>
+                <h3>Travel Community</h3>
+                <p>Connect with fellow travelers, share experiences, and get tips from our vibrant community.</p>
+            </li>
+            <li>
+                <h3>24/7 Customer Support</h3>
+                <p>Our dedicated support team is available around the clock to assist you with any inquiries or issues during your travels.</p>
+            </li>
+            <li>
+                <h3>Travel Blogs and Guides</h3>
+                <p>Access a wealth of travel articles, blogs, and guides to inspire and inform your travel planning.</p>
+            </li>
+            <li>
+                <h3>Multi-Language Support</h3>
+                <p>Choose from multiple languages for a seamless and accessible travel planning experience.</p>
+            </li>
+            <li>
+                <h3>Offline Maps and Itinerary Access</h3>
+                <p>Download maps and itineraries to access them offline, ensuring you never get lost while exploring.</p>
+            </li>
+            <li>
+                <h3>Exclusive Discounts and Offers</h3>
+                <p>Enjoy special deals and discounts on hotels, tours, and activities exclusively for TravelKaro users.</p>
+            </li>
+        </ul>
+    </section>
+
+    <footer>
+        <p>Join us on this incredible journey! <a href="index.html">Sign Up Now</a></p>
+        <p>&copy; 2024 TravelKaro. All rights reserved.</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Website - Features</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #a1c4fd 0%, #c2e9fb 100%);
+            color: #333;
+        }
+
+        /* Header */
+        header {
+            background-color: #4b79a1; /* Deep blue header color */
+            padding: 20px;
+            text-align: center;
+            color: white;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+        }
+
+        header h1 {
+            font-size: 3rem;
+            margin: 0;
+            letter-spacing: 1px;
+        }
+
+        header p {
+            font-size: 1.5rem;
+            margin: 5px 0 0;
+        }
+
+        /* Features Section */
+        .features {
+            padding: 40px 20px;
+            text-align: center;
+            background-color: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+            margin: 20px auto;
+            max-width: 1200px;
+        }
+
+        .features h2 {
+            font-size: 36px;
+            margin-bottom: 30px;
+            color: #4b79a1;
+            font-family: 'Georgia', serif;
+            text-transform: uppercase;
+        }
+
+        .category {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            margin-bottom: 50px;
+        }
+
+        .place {
+            margin: 10px;
+            transition: transform 0.2s;
+            border: 1px solid #d3d3d3;
+            border-radius: 10px;
+            padding: 10px;
+            background-color: #f9f9f9;
+            width: 280px; /* Fixed width for uniformity */
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .place:hover {
+            transform: scale(1.03);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+        }
+
+        .place h3 {
+            font-size: 20px;
+            margin-bottom: 10px;
+            color: #2c3e50;
+        }
+
+        .place p {
+            margin-bottom: 10px;
+            line-height: 1.5;
+            font-size: 0.9rem;
+            color: #34495e;
+        }
+
+        .video-container {
+            margin: 10px 0;
+            max-width: 100%;
+            position: relative;
+            padding-bottom: 56.25%; /* 16:9 Aspect Ratio */
+            height: 0;
+        }
+
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2.5rem;
+            }
+
+            header p {
+                font-size: 1.2rem;
+            }
+
+            .features h2 {
+                font-size: 28px;
+            }
+
+            .place h3 {
+                font-size: 18px;
+            }
+
+            .place p {
+                font-size: 0.8rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            header h1 {
+                font-size: 2rem;
+            }
+
+            header p {
+                font-size: 1rem;
+            }
+
+            .features h2 {
+                font-size: 24px;
+            }
+
+            .place h3 {
+                font-size: 16px;
+            }
+
+            .place p {
+                font-size: 0.7rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Explore India</h1>
+        <p>Your gateway to beautiful destinations</p>
+    </header>
+    <div class="features">
+        <h2>Top Hill Stations</h2>
+        <div class="category hill-stations">
+            <div class="place">
+                <h3>1. Manali</h3>
+                <div class="video-container">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/nkwLjnragtw?autoplay=1&mute=1&si=aiFSgK1eXwFAZPUS" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+                
+                <p>Manali is a picturesque hill station located in the Kullu Valley, known for adventure sports and stunning landscapes. From skiing in the winter to trekking in the summer, Manali offers a wide range of activities for nature enthusiasts. The Solang Valley and Rohtang Pass are major attractions, while the vibrant local culture adds to its charm.</p>
+            </div>
+            <div class="place">
+                <h3>2. Shimla</h3>
+                <div class="video-container">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/0CgYVNztVng?autoplay=1&mute=1&si=lv-t1y_1k6dudKwU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+                
+                <p>Shimla features colonial architecture and scenic views, perfect for a pleasant getaway. Known as the 'Queen of Hills', Shimla's cool climate and beautiful landscapes make it a popular tourist destination. The Mall Road and Jakhoo Temple are must-visit spots, offering a glimpse into the city's rich history and culture.</p>
+            </div>
+            <div class="place">
+                <h3>3. Nainital</h3>
+                <div class="video-container">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/joyX1OsTs20?autoplay=1&mute=1&si=p8scwtqe2Ye0WUnw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+                
+                <p>Nainital is known for its beautiful lakes and lush green mountains, making it a serene escape. The Naini Lake is the centerpiece, offering boating and scenic views. Nainital also boasts numerous trekking trails, charming cafes, and the iconic Naina Devi Temple, making it a perfect blend of relaxation and adventure.</p>
+            </div>
+            <div class="place">
+                <h3>4. Darjeeling</h3>
+                <div class="video-container">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/joyX1OsTs20?autoplay=1&mute=1&si=p8scwtqe2Ye0WUnw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+                
+                <p>Famous for tea plantations, Darjeeling offers stunning views of the Himalayas. The Darjeeling Himalayan Railway, a UNESCO World Heritage Site, provides a unique travel experience. Visitors can explore tea gardens, enjoy the scenic landscape from Tiger Hill, and savor the famous Darjeeling tea.</p>
+            </div>
+            <div class="place">
+                <h3>5. Ooty</h3>
+                <div class="video-container">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/NudsuaFDeAY?autoplay=1&mute=1&si=BHwVgjQhVVgm8Z0q" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+                
+                <p>Ooty, the 'Queen of Hill Stations', is famous for its scenic gardens and pleasant weather. The Nilgiri Mountain Railway is a popular attraction that takes visitors through picturesque landscapes. Ooty Lake is perfect for boating, while the lush tea gardens invite you to relax and enjoy nature.</p>
+            </div>
+            <div class="place">
+                <h3>6. Munnar</h3>
+                <div class="video-container">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/RSDxUUMWKts?autoplay=1&mute=1&si=aCnqoXDZ3eD5eNDX" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+                
+                <p>Munnar is known for its lush green hills and sprawling tea plantations. The breathtaking views from the top of the hills are captivating. Visitors can explore Eravikulam National Park, home to the endangered Nilgiri Tahr, and take leisurely walks through the tea estates, immersing themselves in the serenity of nature.</p>
+            </div>
+        </div>
+        
+        <h2>Top Beach Areas</h2>
+        <div class="category beach-areas">
+            <div class="place">
+                <h3>1. Goa</h3>
+                <div class="video-container">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/PJb-M7kyiRU?autoplay=1&mute=1&si=qdVpIBVrgQ-HA2h8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+                
+                <p>Goa is renowned for its stunning beaches, vibrant nightlife, and Portuguese heritage. With its sandy shores, colorful shacks, and lively markets, Goa attracts millions of tourists each year. From relaxing on the beach to partying at nightclubs, Goa offers a diverse range of experiences for everyone.</p>
+            </div>
+            <div class="place">
+                <h3>2. Andaman and Nicobar Islands</h3>
+                <div class="video-container">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/s-BOAKflid4?autoplay=1&mute=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+                
+                
+                
+                <p>These islands are known for their crystal-clear waters and breathtaking coral reefs. The pristine beaches like Radhanagar Beach are perfect for relaxation and water sports. The islands offer an array of activities, including snorkeling, scuba diving, and exploring lush tropical forests.</p>
+            </div>
+            <div class="place">
+                <h3>3. Kerala (Varkala)</h3>
+                <div class="video-container">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/OQapF-EtEqk?autoplay=1&mute=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+                
+                
+                <p>Varkala is famous for its dramatic cliffs and serene beaches. It is less commercialized than other beach destinations, making it ideal for relaxation. Visitors can enjoy the natural mineral springs and breathtaking sunsets while indulging in Ayurvedic treatments at local spas.</p>
+            </div>
+            <div class="place">
+                <h3>4. Pondicherry</h3>
+                <div class="video-container">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/Wu6oCBEE5bQ?autoplay=1&mute=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+                
+                <p>Pondicherry, with its French colonial architecture and beautiful beaches, offers a unique blend of cultures. Auroville, an experimental township, is also a major attraction. The serene beaches, vibrant markets, and peaceful atmosphere make Pondicherry a must-visit destination for travelers.</p>
+            </div>
+            <div class="place">
+                <h3>5. Lakshadweep</h3>
+                <div class="video-container">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/8qCV1_XET6g?autoplay=1&mute=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+                
+                <p>Known for its stunning coral reefs and tranquil lagoons, Lakshadweep is a tropical paradise. The islands are perfect for water sports like snorkeling and kayaking. The unspoiled beauty and seclusion make it a perfect getaway for those looking to escape the hustle and bustle of city life.</p>
+            </div>
+            <div class="place">
+                <h3>6. Gokarna</h3>
+                <div class="video-container">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/HVHJ0qJ_-_M?autoplay=1&mute=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+                
+                <p>Gokarna is known for its laid-back vibe and pristine beaches. Unlike Goa, Gokarna offers a more peaceful experience, making it perfect for relaxation. Visitors can explore the beautiful beaches, ancient temples, and scenic hills, making it a delightful destination for beach lovers.</p>
+            </div>
+        </div>
+
+        <h2>Top Worship Places</h2>
+        <div class="category worship-places">
+            <div class="place">
+                <h3>1. Varanasi (Kashi Vishwanath Temple)</h3>
+                <div class="video-container">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/JAfvXS8ejhs?autoplay=1&mute=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+                
+                <p>Varanasi, one of the oldest cities in the world, is a significant spiritual hub in India. The Kashi Vishwanath Temple, dedicated to Lord Shiva, attracts millions of pilgrims every year. Situated on the banks of the Ganges River, the temple holds immense religious importance and is a site for various rituals and ceremonies. Visitors can experience the vibrant ghats, where devotees perform daily rituals and ceremonies. The mesmerizing Ganga Aarti, performed every evening, is a sight to behold, drawing both locals and tourists alike. The intertwining of culture, spirituality, and history makes Varanasi a must-visit for anyone seeking to understand India's rich heritage.</p>
+            </div>
+            <div class="place">
+                <h3>2. Golden Temple (Harmandir Sahib, Amritsar)</h3>
+                <div class="video-container">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/iI2y3uK5DpI?autoplay=1&mute=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+                
+                <p>The Golden Temple, or Harmandir Sahib, is the holiest shrine in Sikhism and is located in Amritsar, Punjab. Known for its stunning golden architecture, the temple sits amidst a serene pond, symbolizing equality and humility. The temple welcomes people from all walks of life, reflecting the core Sikh beliefs of inclusivity and community service. Every day, thousands of visitors partake in the Langar (community kitchen), which serves free meals to all, regardless of their background. The spiritual ambiance, combined with the beautiful architecture and rich history, makes the Golden Temple a place of peace and reflection.</p>
+            </div>
+            <div class="place">
+                <h3>3. Tirupati Balaji Temple</h3>
+               <div class="video-container">
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/SZU2NR5Ls28?autoplay=1&mute=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</div>
+
+                <p>The Tirupati Balaji Temple, located in Andhra Pradesh, is one of the most visited and revered pilgrimage sites in India. Dedicated to Lord Venkateswara (an incarnation of Vishnu), the temple attracts millions of devotees each year who come to seek blessings and offer prayers. The temple is famous for its unique rituals and traditions, including the practice of tonsuring (shaving the head) as an act of devotion. The stunning architecture and the serene atmosphere make it a spiritual haven for visitors. The temple complex also includes several smaller shrines and beautiful gardens, enhancing its spiritual significance.</p>
+            </div>
+            <div class="place">
+                <h3>4. Jagannath Temple, Puri</h3>
+                <div class="video-container">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/NH67fdVyvRM?autoplay=1&mute=1&si=RP81kqEzOo5gKSIw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+                
+                <p>The Jagannath Temple in Puri, Odisha, is a revered pilgrimage site for Hindus, dedicated to Lord Jagannath, an incarnation of Vishnu. The temple is known for its iconic wooden chariots used during the annual Rath Yatra festival, where millions gather to pull the chariots through the streets. The temple's architecture is a stunning representation of Kalinga style, with intricate carvings and sculptures adorning its walls. The sacredness of the temple, combined with the vibrant atmosphere during festivals, creates a unique spiritual experience for visitors. Puri's cultural heritage and its proximity to the sea add to the charm of this spiritual destination.</p>
+            </div>
+            <div class="place">
+                <h3>5. Meenakshi Temple, Madurai</h3>
+                <div class="video-container">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/m-fndvEPG30?autoplay=1&mute=1&si=nb39wklvZycq8CmT" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+                
+                <p>The Meenakshi Temple, located in Madurai, Tamil Nadu, is an architectural marvel and an important Hindu pilgrimage site. The temple is dedicated to Goddess Meenakshi (an incarnation of Parvati) and her consort Lord Sundareshwarar (Shiva). Known for its stunning gopurams (gateway towers) adorned with colorful sculptures, the temple reflects the rich Dravidian architectural style. The temple's history dates back centuries, and it plays a significant role in the cultural and religious life of the region. The daily rituals and vibrant festivals, including the Meenakshi Thirukalyanam, draw thousands of devotees and tourists, making it a vibrant center of spirituality.</p>
+            </div>
+            <div class="place">
+                <h3>6. Hampi (Virupaksha Temple)</h3>
+                <div class="video-container">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/0Vs_8efAuFc?autoplay=1&mute=1&si=bPYmQfcLqTF-tbg2" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+                
+                <p>Hampi, a UNESCO World Heritage Site in Karnataka, is renowned for its ancient temples and ruins. The Virupaksha Temple, dedicated to Lord Shiva, is one of the most significant structures in Hampi, showcasing exquisite architecture and intricate carvings. The temple has a rich history and remains an important pilgrimage site for devotees. Hampi's landscape, dotted with majestic boulders and historic remnants, adds to its allure. Exploring the temples and ruins offers a glimpse into the grandeur of the Vijayanagara Empire, making Hampi a must-visit for history enthusiasts and spiritual seekers alike.</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
